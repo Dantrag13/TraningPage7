@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul, li {
+  list-style-type: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+body {
+  font-family: 'PT Serif', serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #5e5e5e;
+}
+
+.header__top {
+  background-color: #303030;
+  font-family: 'Roboto', sans-serif;
+}
+
+.header__btn {
+  float: right;
+  font-style: 16px;
+  line-height: 36px;
+  color: #1b1b1b;
+  background-color: #ffc222;
+  padding: 5px 20px 4px 50px;
+  display: block;
+  position: relative;
+}
+
+.header__btn::before {
+  font-family: 'icomoon';
+  content: "\f0b1";
+  position: absolute;
+  left: 22px;
+  color: #1b1b1b;
+}
+
+.header__contacts {
+  content: '';
+  clear: both;
+  display: block;
+}
+
+.header__phone,
+.header__email {
+  color: #cbcacb;
+  letter-spacing: 0.25px;
+  line-height: 45px;
+  position: relative;
+}
+
+.header__phone {
+  padding-left: 20px;
+  padding-right: 30px;
+}
+
+.header__phone::before {
+  font-family: 'icomoon';
+  content: "\f095";
+  position: absolute;
+  left: 0;
+  color: #ffc222;
+}
+
+.header__email {
+  padding-left: 24px;
+}
+
+.header__email::before {
+  font-family: 'icomoon';
+  content: "\f003";
+  position: absolute;
+  left: 0;
+  color: #ffc222;
+}
+
+.header__content {
+  padding: 34px 0px 23px;
+}
+
+.header_content-inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu li {
+  display: inline-block;
+}
+
+.menu li + li {
+  padding-left: 10px;
+}
+
+.menu a {
+  font-family: 'Roboto', sans-serif;
+  color: #323232;
+  font-size: 16px;
+  line-height: 36px;
+  border: 1px solid transparent;
+  padding: 0 16px;
+  transition: all .3s;
+}
+
+.menu a:hover {
+  border-color: #ffc222;
+}
