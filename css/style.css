@@ -170,6 +170,7 @@ body {
   border: 1px solid #ffc222;
   border-right-width: 20px;
   position: relative;
+  outline: none;
 }
 
 .default-btn::after {
@@ -193,7 +194,6 @@ body {
   width: 40px;
   height: 40px;
   border: 1px solid #fff;
-  background-color: transparent;
   cursor: pointer;
   outline: none;
   background-color: #ffc222;
@@ -227,4 +227,136 @@ body {
 
 .slick-prev::before {
   content: "\f104";
+}
+
+.services {
+  padding: 50px 0 30px;
+}
+
+.services__top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.services__title-box {
+  width: 520px;
+  padding-left: 140px;
+  position: relative;
+}
+
+.services__title-box::before {
+  position: absolute;
+  content: '';
+  width: 105px;
+  height: 2px;
+  background-color: #ffc222;
+  left: 0;
+  top: 12px;
+}
+
+.services-title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 24px;
+  color: #212020;
+  margin-bottom: 16px;
+}
+
+.services-text {
+  letter-spacing: 0.1px;
+}
+
+.services__btn a {
+  font-family: 'Roboto', sans-serif;
+  line-height: 24px;
+  letter-spacing: 0.25px;
+  padding: 17px 38px;
+  color: #373636;
+  border: 3px solid #e6e6e6;
+}
+
+.services__items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.services__item {
+  width: 362px;
+  text-align: center;
+  padding: 30px 0 80px;
+  box-shadow: 0px 7px 24.3px 2.7px rgba(91, 89, 89, 0.14);
+  position: relative;
+  min-height: 375px;
+  background-color: #f9f9f9;
+}
+
+.services__item-title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #212020;
+  padding: 24px 0;
+}
+
+.services__item-text {
+  letter-spacing: 0.1px;
+  padding: 0 33px;
+  margin-bottom: 84px;
+}
+
+.services__item-links {
+  position: absolute;
+  padding: 0 40px;
+  bottom: 40px;
+}
+
+.services__item-link {
+  margin-right: 62px;
+  font-family: 'Roboto', sans-serif;
+  color: #050505;
+  border-bottom: 1px solid #050505;
+}
+
+.services__item-btn {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.25px;
+  color: #373636;
+}
+
+.about {
+  min-height: 300px;
+  background-image: url(../img/abot-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about__inner {
+  max-width: 536px;
+  padding: 30px 0 46px 15px;
+}
+
+.about-title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  color: #fff;
+  font-size: 24px;
+  line-height: 24px;
+  margin-bottom: 34px;
+}
+
+.about-text {
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  color: #d3d2d2;
+  margin-bottom: 38px;
+}
+
+.about-btn::after {
+  color: #303030;
 }
