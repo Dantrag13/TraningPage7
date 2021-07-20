@@ -360,3 +360,112 @@ body {
 .about-btn::after {
   color: #303030;
 }
+
+.form {
+  padding-top: 42px;
+}
+
+.form__inner {
+  padding-bottom: 42px;
+  background-image: url(../img/form-bg.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  min-height: 460px;
+}
+
+.form__title__box {
+  width: 520px;
+  padding-left: 140px;
+  position: relative;
+}
+
+.form__title__box::before {
+  position: absolute;
+  content: '';
+  width: 105px;
+  height: 2px;
+  background-color: #ffc222;
+  left: 0;
+  top: 12px;
+}
+
+.form__title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 24px;
+  color: #212020;
+  margin-bottom: 16px;
+}
+
+.form__text {
+  letter-spacing: 0.1px;
+  margin-bottom: 40px;
+}
+
+.form__box {
+  max-width: 850px;
+}
+
+.form__box__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form__box__inner label,
+.form__box__inner input,
+.form__box__inner textarea,
+.form__box__inner select {
+  display: block;
+  width: 100%;
+}
+
+.form__box__inner label {
+  font-family: 'Roboto', sans-serif;
+  line-height: 36px;
+  color: #282828;
+}
+
+.form__box__inner input {
+  margin-bottom: 8px;
+  outline: none;
+  height: 40px;
+  border: 1px solid #e6e6e6;
+  padding: 0 10px;
+}
+
+.form__box__inner select {
+  outline: none;
+  height: 40px;
+  border: 1px solid #e6e6e6;
+  padding-left: 17px;
+}
+
+.form__box__inner textarea {
+  outline: none;
+  border: 1px solid #e6e6e6;
+  padding: 10px;
+  height: 207px;
+  resize: none;
+  margin-bottom: 40px;
+}
+
+.form__box_left {
+  max-width: 260px;
+  width: 100%;
+}
+
+.form__box__right {
+  max-width: 555px;
+  width: 100%;
+}
+
+.form__box__inner button {
+  color: #282828;
+  background-color: transparent;
+  float: right;
+}
+
+.form__box__inner button::after {
+  color: #282828;
+}
