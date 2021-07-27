@@ -7,6 +7,9 @@ $(function () {
     });
 
 
+    $('select').styler();
+
+
 
 
 

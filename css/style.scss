@@ -384,9 +384,6 @@ body {
 
 }
 
-.form__content {
-}
-
 .form__title__box {
     width: 520px;
     padding-left: 140px;
@@ -428,8 +425,7 @@ body {
 
 .form__box__inner label,
 .form__box__inner input,
-.form__box__inner textarea,
-.form__box__inner select {
+.form__box__inner textarea {
     display: block;
     width: 100%;
 }
@@ -453,6 +449,68 @@ body {
     height: 40px;
     border: 1px solid #e6e6e6;
     padding-left: 17px;
+}
+
+.form__box__inner .jq-selectbox.jqselect {
+    display: block;
+    width: 100%;
+}
+
+.form__box__inner .jq-selectbox__select {
+    height: 40px;
+    border: 1px solid #e6e6e6;
+    padding-left: 17px;
+    
+}
+
+.form__box__inner .jq-selectbox__trigger-arrow::before {
+    font-family: 'icomoon';
+    content: "\f105";
+    position: absolute;
+    right: 17px;
+    top: 0;
+    transform: rotate(90deg);
+}
+
+.form__box__inner .jq-selectbox__dropdown {
+	width: 100%;
+	margin: 2px 0 0;
+	padding: 0;
+	border: 1px solid #e6e6e6;
+	background: #FFF;
+	box-shadow: 0 2px 10px rgba(0,0,0,.2);
+}
+
+.form__box__inner .jq-selectbox li {
+	min-height: 18px;
+	padding: 5px 17px 6px;
+	color: #231F20;
+    &:hover {
+        background-color: #ffc222;
+	    color: #FFF;
+    }
+}
+.form__box__inner .jq-selectbox li.selected {
+	background-color: #A3ABB1;
+	color: #FFF;
+}
+
+.form__box__inner .jq-selectbox li.disabled {
+	color: #AAA;
+}
+.form__box__inner .jq-selectbox li.disabled:hover {
+	background: none;
+}
+.jq-selectbox li.optgroup {
+	font-weight: bold;
+}
+.form__box__inner .jq-selectbox li.optgroup:hover {
+	background: none;
+	color: #231F20;
+	cursor: default;
+}
+.form__box__inner .jq-selectbox li.option {
+	padding-left: 25px;
 }
 
 .form__box__inner textarea {
@@ -481,4 +539,59 @@ body {
     &::after {
         color: #282828;
     }
+}
+
+.advantages {
+    background: url(../img/selects-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 55px 0 40px;
+    min-height: 285px;
+}
+
+.advantages__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.advantages_item {
+    max-width: 360px;
+    flex-direction: column;
+    text-align: center;
+}
+
+.advantages__title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #fff;
+    padding: 60px 0 15px;
+    position: relative;
+    &::before {
+        position: absolute;
+        content: '';       
+        width: 40px;
+        height: 40px;
+        border: 2px solid #ffc222;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    &::after {
+        position: absolute;
+        font-family: 'icomoon';
+        font-size: 14px;
+        content: '\f00c';
+        color: #fff;
+        top: 12px;
+        left: 50%;
+        transform: translateX(-50%);
+    }    
+}
+
+.advantages__text {
+    padding: 0 20px;
+    color: #d3d2d2;
 }
