@@ -6,8 +6,11 @@ $(function () {
         infinite: false,
     });
 
-
     $('select').styler();
+
+    $('.header__burger-menu').on('click', function () {
+        $('.menu ul').slideToggle();
+    });
 
 
 
